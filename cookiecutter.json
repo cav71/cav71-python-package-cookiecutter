@@ -1,9 +1,11 @@
 {
-    "author_name": "Your name",
-    "author_email": "Your email address (eq. you@example.com)",
-    "github_username": "",
-    "project_name": "Name of the project (will be shown e.g. as the title in the readme)",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
-    "package_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
-    "project_short_description": "A short description of the project"
+  "full_name": "Your Name",
+  "email": "your-name@example.com",
+  "user" : "your-github-username",
+  "project_name": "argparse-plus",
+  "is_package": [ true, false ],
+  "package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "url": "https://github.com/{{cookiecutter.user}}/{{cookiecutter.project_name}}",
+  "version": "0.0.0",
+  "project_short_description": "A brief project description"
 }
